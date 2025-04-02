@@ -26,7 +26,8 @@ RUN pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 \
 
 # Install requirements and pycocotools
 COPY requirements.txt .
-RUN pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip install -r requirements.txt 
+#-i https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install pycocotools==2.0.3
 
 # # Install Horizon packages
